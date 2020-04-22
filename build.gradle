@@ -34,6 +34,15 @@ task hello{
         print("Hello!")
     }
     doLast {
+        print(" , World of gradle build tool!")
+    }
+}
+
+task goodbye{
+
+    dependsOn hello
+
+    doFirst {
         print("Goodbye!")
     }
 }
