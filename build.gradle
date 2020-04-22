@@ -27,3 +27,13 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 }
+
+//Way to do a task
+task hello{
+    doFirst {
+        print("Hello!")
+    }
+    doLast {
+        print("Goodbye!")
+    }
+}
